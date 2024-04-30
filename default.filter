@@ -4,7 +4,6 @@
 //
 //	For Casual and EndGame Players
 
-
 ItemDisplay[SET ETH !ID (7fb)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %GREEN%    %NAME%    %GREEN%  // Eth BK Colossus Sword
 ItemDisplay[SET ETH !ID (7gd)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %GREEN%    %NAME%    %GREEN%  // Eth BK Colossus Blade
 ItemDisplay[SET ETH !ID (7m7)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %GREEN%    %NAME%    %GREEN%  // Eth IK Maul
@@ -12,11 +11,12 @@ ItemDisplay[SET ETH !ID (6cs)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %GREEN%    %NAME
 ItemDisplay[SET ETH !ID (xar)]:  %GREEN%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %GREEN%%NAME%                    %GREEN% // Eth Griswold's Heart
 ItemDisplay[SET ETH !ID]:  %GREEN%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %GREEN%%NAME%                    %GREEN% 
 ItemDisplay[SET ETH ID]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %GREEN%%NAME%%GREEN% 
-ItemDisplay[box]: %GOLD%             %NAME%             %GOLD% // Cube
-ItemDisplay[leg]: %WHITE%       Wirt's Leg       %WHITE%        //
+ItemDisplay[box]: %GOLD%               %NAME%               %GOLD% // Cube
+ItemDisplay[leg]: %WHITE%                     Wirt's Leg                     %WHITE%        //
 ItemDisplay[NMAG !ETH CIRC]: // %NAME% // Imbue Bases NMAG Circlet - Coronet - Tiara - Diadem
 ItemDisplay[MAG !ETH !ID (EQ7)]: // %BLUE%%NAME%%BLUE% // Shows MAG Circlets
 ItemDisplay[MAG ETH !ID (EQ7)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows Mag Eth Circlets
+//ItemDisplay[NMAG !ETH SOCKETS=5 (crs)]: %NAME% %GRAY%[%SOCKETS%%GRAY%] // Shows Crystal sword 5 sockets
 
 
 
@@ -33,9 +33,11 @@ ItemDisplay[NMAG ETH (SOCKETS=0 OR SOCKETS>2) 7tr ED>9]: %GRAY%[%WHITE%Eth%WHITE
 ItemDisplay[NMAG ETH (SOCKETS=0 OR SOCKETS>2) 7st ED>9]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %NAME% %GRAY%[%SOCKETS%%GRAY%] // Shows Eth Ghost Spear
 ItemDisplay[NMAG ETH (SOCKETS=0 OR SOCKETS>2) 7p7 ED>9]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %NAME% %GRAY%[%SOCKETS%%GRAY%] // Shows Eth War Pike
 
+//Hides Nmag Chests
 ItemDisplay[NMAG CHEST SOCKETS~1-2]: // Hides all CHESTS with 1 and 2 sockets
+
 //Eth NMAG Armors
-ItemDisplay[NMAG ETH (!SOCKETS=0 OR !SOCKETS>2) (uar)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %NAME% %GRAY%[%SOCKETS>1%%GRAY%] // Nmag Eth Sacred Armor
+ItemDisplay[NMAG ETH (!SOCKETS=0 OR !SOCKETS>2) (uar)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %NAME% %GRAY%[%SOCKETS%%GRAY%] // Nmag Eth Sacred Armor
 
 
 // Matriarchal / GMB
@@ -48,7 +50,6 @@ ItemDisplay[(amb OR amc) NMAG TABSK0<3]: // Hides +1 and +2 Bow Sk Grand Matron 
 //ItemDisplay[WEAPON ED>12]: %NAME%{%NAME%}%CONTINUE%
 
 
-
 //Potentially sellable expensive Worth some GOLD 2 SLOT items
 //ItemDisplay[(RARE OR MAG) ETH !ETH !ID ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) FILTLVL=<4]: %NAME% // %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%) ETH MAG & RARE Wands - Eagle Orb - Glowing Orb - Heavenly Stone - Sacred Globe	- Crystalline Globe	- Eldritch Orb - Smoked Sphere - Cloudy Sphere - Demon Heart - Clasped Orb - Sparkling Ball - Vortex Orb
 ItemDisplay[(RARE) !ETH !ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) (FILTLVL>1 AND FILTLVL<4)]: %YELLOW%                      %NAME%                        %YELLOW% // %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%) 
@@ -58,10 +59,10 @@ ItemDisplay[(MAG) ETH !ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3
 
 //Potentially sellable expensive Worth some GOLD 2 SLOT items
 //ItemDisplay[(RARE OR MAG) ETH !ETH !ID ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) FILTLVL=6]: // %NAME% // %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%) ETH MAG & RARE Wands - Eagle Orb - Glowing Orb - Heavenly Stone - Sacred Globe	- Crystalline Globe	- Eldritch Orb - Smoked Sphere - Cloudy Sphere - Demon Heart - Clasped Orb - Sparkling Ball - Vortex Orb
-ItemDisplay[(RARE) !ETH !ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) FILTLVL=<4]: // %YELLOW%                      %NAME%                        %YELLOW% // %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%) 
-ItemDisplay[(MAG) !ETH !ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) FILTLVL=<4]: // %BLUE%                      %NAME%                        %BLUE% %GRAY% // (%TAN%$%WHITE%%PRICE%%GRAY%)
-ItemDisplay[(RARE) ETH !ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) FILTLVL=<4]: // %YELLOW%                      %NAME%                        %YELLOW% // %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%) // ETH VERSION
-ItemDisplay[(MAG) ETH !ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) FILTLVL=<4]: // %BLUE%                    %NAME%                        %BLUE% %GRAY% // (%TAN%$%WHITE%%PRICE%%GRAY%) // ETH VERSION 
+ItemDisplay[RARE !ETH !ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) FILTLVL=<4]: // %YELLOW%                      %NAME%                        %YELLOW% // %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%) 
+ItemDisplay[MAG !ETH !ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) FILTLVL=<4]: // %BLUE%                      %NAME%                        %BLUE% %GRAY% // (%TAN%$%WHITE%%PRICE%%GRAY%)
+ItemDisplay[RARE ETH !ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) FILTLVL=<4]: // %YELLOW%                      %NAME%                        %YELLOW% // %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%) // ETH VERSION
+ItemDisplay[MAG ETH !ID (WAND OR ob1 OR ob6 OR obb OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) FILTLVL=<4]: // %BLUE%                    %NAME%                        %BLUE% %GRAY% // (%TAN%$%WHITE%%PRICE%%GRAY%) // ETH VERSION 
 
 //Potentially sellable expensive Worth some GOLD 3 SLOT items
 //ItemDisplay[(RARE OR MAG) ETH !ETH !ID ID (ob5 OR oba OR obf OR scp OR 9sc OR 7sc OR gsc OR 9qs OR 7qs) FILTLVL<6]: // %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%) // MAG & RARE Jared's Stone - Swirling Crystal - Dimensional Shard - Scepter - Rune Scepter - Mighty Scepter - Grand Scepter - Holy Water Sprinkler - Seraph Rod
@@ -111,28 +112,126 @@ ItemDisplay[MAG !ETH ID (ARMOR)]: %BLUE%%NAME%%BLUE% // Shows MAG identified WEA
 ItemDisplay[RARE !ID amu]: %YELLOW%                       %NAME%                          %YELLOW% %MAP-6a% //
 ItemDisplay[RARE !ID rin]: %YELLOW%                       %NAME%                          %YELLOW% %MAP-6a% //
 
+//ItemDisplay[(aqv OR cqv) ID]: %NAME% //Shows identified Arrows and Bolts
 //Arrows & Bolts
-ItemDisplay[MAG ID (aqv OR cqv)]: %BLUE%%NAME%%BLUE% // Shows Identified MAG Bolts & Arrows
+//ItemDisplay[MAG ID (aqv OR cqv)]: %BLUE%%NAME%%BLUE% // Shows Identified MAG Bolts & Arrows
 ItemDisplay[MAG !ID (aqv OR cqv)]: // Hides Unidentified MAG Bolts & Arrows
 ItemDisplay[NMAG (aqv OR cqv)]: // Hides Unidentified NMAG Bolts & Arrows
 ItemDisplay[RARE !ID aqv]: %YELLOW%                           %NAME%                           %YELLOW% // Shows Rare Arrows
-ItemDisplay[RARE !ID cqv]: // %YELLOW%                     %%NAME%                     %%YELLOW% // Shows Rare Bolts
+ItemDisplay[RARE !ID cqv]: // %YELLOW%                     %NAME%                     %YELLOW% // Shows Rare Bolts
 //ItemDisplay[aqv RARE STAT360=0 (ED>39 OR TABSK0>1) IAS>19 (STR+DEX>11 OR AR>99 OR FRW>0 OR STAT156>0 OR MAXDMG>7 OR MINDMG>7 OR RES>9 OR TABSK0>1 OR TABSK1>0 OR LIFE>19 OR STAT110>49 OR STAT135>7 OR STAT136>7 OR STAT141>7) LVLREQ<31]: %DOT-9B%%NAME%{%NAME%}{%RED%Slam for %TAN%Low Level Dueling %CL%%NAME%}%CONTINUE%
+
+//ItemDisplay[!UNI !SET aqv]: Arrows%CONTINUE%
+//ItemDisplay[!UNI !SET cqv]: Bolts%CONTINUE%
+ItemDisplay[MAG (aqv OR cqv)]: %BLUE%%NAME%%CONTINUE%
+ItemDisplay[RARE (aqv OR cqv)]: %YELLOW%%NAME%%CONTINUE%
+
+
+//-----------------------------------------------------------------------------------
+// MAG OR RARE OR CRAFT - ITEM TAGS (Extends on some of the Shopping and tags)
+//-----------------------------------------------------------------------------------
+ItemDisplay[!UNI !SET aqv]: Arrows%CONTINUE%
+ItemDisplay[!UNI !SET cqv]: Bolts%CONTINUE%
+ItemDisplay[MAG (aqv OR cqv)]: %BLUE%%NAME%%CONTINUE%
+ItemDisplay[RARE (aqv OR cqv)]: %YELLOW%%NAME%%CONTINUE%
+
+// Resists
+//-----------------------------------------------------------------------------------
+
+// half freeze STAT118
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT118=1]: %BLUE%HFD %NAME%%CONTINUE%
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT118=2]: %BLUE%CBF %NAME%%CONTINUE%
+
+// All res
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) RES>0]: %PURPLE%%RES% AllRES %NAME%%CONTINUE%
+
+// Resists ARMOR
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) (RARE OR CRAFT) (FRES+CRES+LRES+PRES>19) CRES>0 !(RES>0)]: %BLUE%%STAT43%C %NAME%%CONTINUE%
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) (RARE OR CRAFT) (FRES+CRES+LRES+PRES>19) FRES>0 !(RES>0)]: %RED%%STAT39%F %NAME%%CONTINUE%
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) (RARE OR CRAFT) (FRES+CRES+LRES+PRES>19) LRES>0 !(RES>0)]: %YELLOW%%STAT41%L %NAME%%CONTINUE%
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) (RARE OR CRAFT) (FRES+CRES+LRES+PRES>19) PRES>0 !(RES>0)]: %GREEN%%STAT45%P %NAME%%CONTINUE%
+
+
+// PLR
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT110>0]: %DARK_GREEN%%STAT110%PLR %NAME%%CONTINUE%
+
+// STATS
+//-----------------------------------------------------------------------------------
+// Leech
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT60>0]: %RED%%STAT60%LL %NAME%%CONTINUE%
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT62>0]: %BLUE%%STAT62%ML %NAME%%CONTINUE%
+
+// MF
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT80>0]: %BLUE%%STAT80%MF %NAME%%CONTINUE%
+
+// FRW
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) FRW>0]: %GOLD%%FRW% FRW %NAME%%CONTINUE%
+
+// FBR
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) FBR>0]: %ORANGE%%STAT102%FBR %NAME%%CONTINUE%
+
+// FHR
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT99>0]: %GOLD%%STAT99%FHR %NAME%%CONTINUE%
+
+// IAS
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) IAS>0]: %ORANGE%%STAT93%IAS %NAME%%CONTINUE%
+
+// DS
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT141>0]: %YELLOW%%STAT141%DS %NAME%%CONTINUE%
+
+// CB
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT136>0]: %YELLOW%%STAT136%CB %NAME%%CONTINUE%
+
+// FCR
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) FCR>0]: %TAN%%STAT105%FCR %NAME%%CONTINUE%
+
+// Piercing
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT156>0]: %BLUE%%STAT156%Pierce %NAME%%CONTINUE%
+
+// STATS
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) (STR+DEX+STAT3>19)]: Stat %NAME%%CONTINUE%
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) (STR+DEX+STAT3>29)]: Fat%NAME%%CONTINUE%
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) (STR+DEX+STAT3>19)]: %LIGHT_GRAY%%NAME%%CONTINUE%
+
+// PDR
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT36>0]: %SAGE%%STAT36%PDR %NAME%%CONTINUE%
+
+// Enh Dmg  only
+ItemDisplay[(aqv OR cqv) (MAG OR RARE OR CRAFT) STAT17>0]: %RED%%STAT17%ED %NAME%%CONTINUE%
+
+
+
+
+// SKILLS
+//-----------------------------------------------------------------------------------
+
+// Class Skills
+// +1
+ItemDisplay[(aqv OR cqv) ID (MAG OR RARE OR CRAFT) CLSK0=1]: %PURPLE%Zon%TAN%Sk %NAME%%CONTINUE%
+// +2
+ItemDisplay[(aqv OR cqv) ID (MAG OR RARE OR CRAFT) CLSK0>1]: %PURPLE%%CLSK0% Zon%TAN%Sks %NAME%%CONTINUE%
+
+// Tree Sks
+ItemDisplay[(aqv OR cqv) ID (MAG OR RARE OR CRAFT) TABSK0>0]: %PURPLE%+%TABSK0% Bow%TAN% Sks %NAME%%CONTINUE%
+
+//-----------------------------------------------------------------------------------
+
+
 
 //Amazon RARE CLASS Bows
 ItemDisplay[RARE !ETH !ID am1]:                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Stag Bow
 ItemDisplay[RARE !ETH !ID am6]:                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Ashwood Bow
 ItemDisplay[RARE !ETH !ID amb]:                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Matriarchal Bow
-ItemDisplay[RARE !ETH !ID am2]:                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Reflex Bow
-ItemDisplay[RARE !ETH !ID am7]:                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Ceremonial Bow
-ItemDisplay[RARE !ETH !ID amc]:                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Grand Matron Bow
+ItemDisplay[RARE !ETH !ID am2]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Reflex Bow
+ItemDisplay[RARE !ETH !ID am7]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Ceremonial Bow
+ItemDisplay[RARE !ETH !ID amc]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Grand Matron Bow
 
 //Amazon MAG CLASS Bows
 ItemDisplay[MAG !ETH !ID (am1)]:                  %BLUE%             %NAME%             %BLUE% // Shows MAG Stag Bow
 ItemDisplay[MAG !ETH !ID (am6)]:                  %BLUE%             %NAME%             %BLUE% // Shows MAG Ashwood Bow
 ItemDisplay[MAG !ETH !ID (amb)]:                  %BLUE%             %NAME%             %BLUE% // Shows MAG Matriarchal Bow
-ItemDisplay[MAG !ETH !ID (am2)]:                  %BLUE%             %NAME%             %BLUE% // Shows MAG Reflex Bow
-ItemDisplay[MAG !ETH !ID (am7)]:                  %BLUE%             %NAME%             %BLUE% // Shows MAG Ceremonial Bow
+ItemDisplay[MAG !ETH !ID (am2)]: //                 %BLUE%             %NAME%             %BLUE% // Shows MAG Reflex Bow
+ItemDisplay[MAG !ETH !ID (am7)]: //                 %BLUE%             %NAME%             %BLUE% // Shows MAG Ceremonial Bow
 ItemDisplay[MAG !ETH !ID (amc)]:                  %BLUE%             %NAME%             %BLUE% // Shows MAG Grand Matron Bow
 
 
@@ -175,9 +274,9 @@ ItemDisplay[MAG !ETH !ID (6rx)]: //                 %BLUE%             %NAME%   
 
 
 //RARE ETH SWORDS, AXES & MACES
-ItemDisplay[RARE ETH !ID (crs)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Crystal Sword
-ItemDisplay[RARE ETH !ID (9cr)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Dimensional Blade
-ItemDisplay[RARE ETH !ID (7cr)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Phase Blade
+ItemDisplay[RARE ETH !ID (crs)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Crystal Sword
+ItemDisplay[RARE ETH !ID (9cr)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Dimensional Blade
+ItemDisplay[RARE ETH !ID (7cr)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Phase Blade
 ItemDisplay[RARE ETH !ID (clm)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Claymore
 ItemDisplay[RARE ETH !ID (9cm)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Dacian Falx
 ItemDisplay[RARE ETH !ID (7cm)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Highland Blade
@@ -187,12 +286,12 @@ ItemDisplay[RARE ETH !ID (7gs)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAM
 ItemDisplay[RARE ETH !ID (bsw)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Bastard Sword
 ItemDisplay[RARE ETH !ID (9b9)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Gothic Sword
 ItemDisplay[RARE ETH !ID (7b7)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Champion Sword
-ItemDisplay[RARE ETH !ID (flb)]:  %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Flamberge
+ItemDisplay[RARE ETH !ID (flb)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Flamberge
 ItemDisplay[RARE ETH !ID (9fb)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Zweihander
-ItemDisplay[RARE ETH !ID (7fb)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Colossus Sword
+ItemDisplay[RARE ETH !ID (7fb)]:  %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Colossus Sword
 ItemDisplay[RARE ETH !ID (gsd)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Great Sword
 ItemDisplay[RARE ETH !ID (9gd)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Executioner Sword
-ItemDisplay[RARE ETH !ID (7gd)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Colossus Blade
+ItemDisplay[RARE ETH !ID (7gd)]:  %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Colossus Blade
 ItemDisplay[RARE ETH !ID (wax)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH War axe
 ItemDisplay[RARE ETH !ID (9wa)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Naga
 ItemDisplay[RARE ETH !ID (7wa)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW% // Shows RARE ETH Berserker Axe
@@ -229,7 +328,7 @@ ItemDisplay[RARE ETH !ID (7gm)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%
 ItemDisplay[RARE !ETH !ID (crs)]: //                 %YELLOW%             %NAME%             %YELLOW% // Shows RARE Crystal Sword					
 ItemDisplay[RARE !ETH !ID (9cr)]: //                 %YELLOW%             %NAME%             %YELLOW% // Shows RARE Dimensional Blade
 ItemDisplay[RARE !ETH !ID (7cr)]: //                 %YELLOW%             %NAME%             %YELLOW% // Shows RARE Phase Blade
-ItemDisplay[RARE !ETH !ID (clm)]: //                   %YELLOW%             %NAME%             %YELLOW% // Shows RARE Claymore
+ItemDisplay[RARE !ETH !ID (clm)]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Claymore
 ItemDisplay[RARE !ETH !ID (9cm)]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Dacian Falx
 ItemDisplay[RARE !ETH !ID (7cm)]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Highland Blade
 ItemDisplay[RARE !ETH !ID (gis)]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Giant Sword
@@ -246,7 +345,7 @@ ItemDisplay[RARE !ETH !ID (9gd)]: //                  %YELLOW%             %NAME
 ItemDisplay[RARE !ETH !ID (7gd)]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Colossus Blade
 ItemDisplay[RARE !ETH !ID (wax)]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE War axe
 ItemDisplay[RARE !ETH !ID (9wa)]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Naga
-ItemDisplay[RARE !ETH !ID (7wa)]:                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Berserker Axe
+ItemDisplay[RARE !ETH !ID (7wa)]: //                 %YELLOW%             %NAME%             %YELLOW% // Shows RARE Berserker Axe
 ItemDisplay[RARE !ETH !ID (2ax)]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Double Axe
 ItemDisplay[RARE !ETH !ID (92a)]: //                  %YELLOW%             %NAME%             %YELLOW% // Shows RARE Twin Axe
 ItemDisplay[RARE !ETH !ID (72a)]: //                 %YELLOW%             %NAME%             %YELLOW% // Shows RARE Ettin Axe
@@ -278,9 +377,9 @@ ItemDisplay[RARE !ETH !ID (7gm)]: //                  %YELLOW%             %NAME
 
 
 //MAG ETH SWORDS, AXES & MACES
-ItemDisplay[MAG ETH !ID (crs)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Crystal Sword					
-ItemDisplay[MAG ETH !ID (9cr)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Dimensional Blade
-ItemDisplay[MAG ETH !ID (7cr)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Phase Blade
+ItemDisplay[MAG ETH !ID (crs)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Crystal Sword					
+ItemDisplay[MAG ETH !ID (9cr)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Dimensional Blade
+ItemDisplay[MAG ETH !ID (7cr)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Phase Blade
 ItemDisplay[MAG ETH !ID (clm)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Claymore
 ItemDisplay[MAG ETH !ID (9cm)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Dacian Falx
 ItemDisplay[MAG ETH !ID (7cm)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Highland Blade
@@ -292,13 +391,13 @@ ItemDisplay[MAG ETH !ID (9b9)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%
 ItemDisplay[MAG ETH !ID (7b7)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Champion Sword
 ItemDisplay[MAG ETH !ID (flb)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Flamberge
 ItemDisplay[MAG ETH !ID (9fb)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Zweihander
-ItemDisplay[MAG ETH !ID (7fb)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Colossus Sword
+ItemDisplay[MAG ETH !ID (7fb)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Colossus Sword
 ItemDisplay[MAG ETH !ID (gsd)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Great Sword
 ItemDisplay[MAG ETH !ID (9gd)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Executioner Sword
-ItemDisplay[MAG ETH !ID (7gd)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Colossus Blade
+ItemDisplay[MAG ETH !ID (7gd)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Colossus Blade
 ItemDisplay[MAG ETH !ID (wax)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH War axe
 ItemDisplay[MAG ETH !ID (9wa)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Naga
-ItemDisplay[MAG ETH !ID (7wa)]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Berserker Axe
+ItemDisplay[MAG ETH !ID (7wa)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Berserker Axe
 ItemDisplay[MAG ETH !ID (2ax)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Double Axe
 ItemDisplay[MAG ETH !ID (92a)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Twin Axe
 ItemDisplay[MAG ETH !ID (72a)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Ettin Axe
@@ -322,10 +421,10 @@ ItemDisplay[MAG ETH !ID (9wh)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%
 ItemDisplay[MAG ETH !ID (7wh)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Legendary Mallet
 ItemDisplay[MAG ETH !ID (mau)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Maul				
 ItemDisplay[MAG ETH !ID (9m9)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH War Club
-ItemDisplay[MAG ETH !ID (7m7)]:  %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Ogre Maul
+ItemDisplay[MAG ETH !ID (7m7)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Ogre Maul
 ItemDisplay[MAG ETH !ID (gma)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Great Maul						
 ItemDisplay[MAG ETH !ID (9gm)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Martel de Fer
-ItemDisplay[MAG ETH !ID (7gm)]:  %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Thunder Maul
+ItemDisplay[MAG ETH !ID (7gm)]: // %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%%BLUE% // Shows MAG ETH Thunder Maul
 
 
 //MAG SWORDS, AXES & MACES
@@ -431,20 +530,20 @@ ItemDisplay[RARE !ETH ID (upk OR uit OR ush OR uow OR uts)]: %YELLOW%%NAME%%YELL
 
 
 //RARE Strong Assa ETH CLAWS
-ItemDisplay[RARE ETH (axf)]: %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% // ETH RARE Hatchet Hands
-ItemDisplay[RARE ETH (9xf)]: %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% // ETH RARE Fascia
-ItemDisplay[RARE ETH (7xf)]: %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% // ETH RARE War Fist
+ItemDisplay[RARE ETH (axf)]: // %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% // ETH RARE Hatchet Hands
+ItemDisplay[RARE ETH (9xf)]: // %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% // ETH RARE Fascia
+ItemDisplay[RARE ETH (7xf)]: // %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% // ETH RARE War Fist
 ItemDisplay[RARE ETH (ces)]: // %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% // ETH RARE Cestus
 ItemDisplay[RARE ETH (9cs)]: // %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% // ETH RARE Hand Scythe
 ItemDisplay[RARE ETH (7cs)]: // %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% // ETH RARE Battle Cestus
-ItemDisplay[RARE ETH (7kr)]: %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% //  // ETH RARE Fanged Knife
+ItemDisplay[RARE ETH (7kr)]: // %YELLOW%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%                    %YELLOW% //  // ETH RARE Fanged Knife
 
 
 
 //RARE Strong Assa Claws
 ItemDisplay[RARE !ETH (axf)]: //%YELLOW%%NAME%%YELLOW% // RARE Hatchet Hands
 ItemDisplay[RARE !ETH (9xf)]: //%YELLOW%%NAME%%YELLOW% // RARE Fascia
-ItemDisplay[RARE !ETH (7xf)]: %YELLOW%                    %YELLOW%%NAME%                    %YELLOW% // RARE War Fist
+ItemDisplay[RARE !ETH (7xf)]: //%YELLOW%                    %YELLOW%%NAME%                    %YELLOW% // RARE War Fist
 ItemDisplay[RARE !ETH (ces)]: //%YELLOW%%NAME%%YELLOW% // RARE Cestus
 ItemDisplay[RARE !ETH (9cs)]: //%YELLOW%%NAME%%YELLOW% // RARE Hand Scythe
 ItemDisplay[RARE !ETH (7cs)]: //%YELLOW%%NAME%%YELLOW% // RARE Battle Cestus
@@ -452,13 +551,13 @@ ItemDisplay[RARE !ETH (7cs)]: //%YELLOW%%NAME%%YELLOW% // RARE Battle Cestus
 
 
 //MAG Strong Assa ETH CLAWS + Fanged Knife
-ItemDisplay[MAG ETH (axf)]: %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% // ETH MAG Hatchet Hands
-ItemDisplay[MAG ETH (9xf)]: %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% // ETH MAG Fascia
-ItemDisplay[MAG ETH (7xf)]: %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% // ETH MAG War Fist
+ItemDisplay[MAG ETH (axf)]: // %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% // ETH MAG Hatchet Hands
+ItemDisplay[MAG ETH (9xf)]: // %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% // ETH MAG Fascia
+ItemDisplay[MAG ETH (7xf)]: // %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% // ETH MAG War Fist
 ItemDisplay[MAG ETH (ces)]: // %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% // ETH MAG Cestus
 ItemDisplay[MAG ETH (9cs)]: // %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% // ETH MAG Hand Scythe
 ItemDisplay[MAG ETH (7cs)]: // %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% // ETH MAG Battle Cestus
-ItemDisplay[MAG ETH (7kr)]: %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% //  // ETH MAG Fanged Knife
+ItemDisplay[MAG ETH (7kr)]: // %BLUE%                    %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %BLUE%%NAME%                    %BLUE% //  // ETH MAG Fanged Knife
 
 
 //RARE ETH Necro Shields
@@ -648,18 +747,18 @@ ItemDisplay[MAG !ETH !ID (7qr)]: // Hides Mag Scissors Suwayyah
 
 //Hides GARBAGE RARE items non ETH and ETH Rare eth1
 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
-//ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
+ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
+ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
+ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
+ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
+ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
+ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
+ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
+ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
+ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth 
+ItemDisplay[RARE !ID ETH (8cs)]: // Hides Rare Eth Cedar Staff
+ItemDisplay[RARE !ID ETH (lst)]: // Hides Rare Eth Long Staff
+ItemDisplay[RARE !ID ETH (sml)]: // Hides Rare Eth Small Shield
 ItemDisplay[RARE !ID ETH (lrg)]: // Hides Rare Eth Large Shield
 ItemDisplay[RARE !ID ETH (kit)]: // Hides Rare Eth Kite Shield
 ItemDisplay[RARE !ID ETH (bst)]: // Hides Rare Eth Battle Staff 
@@ -924,13 +1023,23 @@ ItemDisplay[MAG ETH !ID DAGGER]: // Hides Mag Eth Daggers
 ItemDisplay[MAG ETH !ID BOOTS]: // Hides Mag Eth Daggers
 
 //MAG ETH1 RANDOM ITEMS
-//ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
-//ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
-//ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
-//ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
-//ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
-//ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
-//ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
+ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
+ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
+ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
+ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
+ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
+ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth 
+ItemDisplay[MAG ETH !ID (8ls)]: // Hides Mag Eth Quarterstaff
+ItemDisplay[MAG ETH !ID (9s9)]: // Hides Mag Eth Simbilan
+ItemDisplay[MAG ETH !ID (xhg)]: // Hides Mag Eth War Gauntlets
+ItemDisplay[MAG ETH !ID (umg)]: // Hides Mag Eth Vambraces
+ItemDisplay[MAG ETH !ID (7sm)]: // Hides Mag Eth Ataghan
+ItemDisplay[MAG ETH !ID (9ha)]: // Hides Mag Eth Hatchet
+ItemDisplay[MAG ETH !ID (9s8)]: // Hides Mag Eth Battle Scythe
+ItemDisplay[MAG ETH !ID (9bs)]: // Hides Mag Eth Battle Sword
+ItemDisplay[MAG ETH !ID (7fl)]: // Hides Mag Eth Scourge
+ItemDisplay[MAG ETH !ID (9ba)]: // Hides Mag Eth Bearded Axe
+ItemDisplay[MAG ETH !ID (7ss)]: // Hides Mag Eth Falcata
 ItemDisplay[MAG ETH !ID (lst)]: // Hides Mag Eth Long Staff
 ItemDisplay[MAG ETH !ID (9p9)]: // Hides Mag Eth Lance
 ItemDisplay[MAG ETH !ID (wsd)]: // Hides Mag Eth War Sword
@@ -1074,7 +1183,7 @@ ItemDisplay[MAG !ID (7ws)]: // Hides mag Caduceus
 
 //Hides NMAG items ETH and Non ETH Nmag1
 ItemDisplay[NMAG (7ws)]: // Hides Nmag Caduceus - WANT TO HIDE ONLY no skills Nmag caduceus
-ItemDisplay[NMAG SK73=3 (kri OR 9kr OR 7kr)]: %NAME% // Shows NMAG +3 Pst, The Jade Tan Do, Cinquedeas & Fanged Knife
+ItemDisplay[NMAG SK73=3 (kri OR 9kr OR 7kr)]: // %NAME% // Shows NMAG +3 Pst, The Jade Tan Do, Cinquedeas & Fanged Knife
 ItemDisplay[NMAG (tax)]: // Hides Nmag Throwing Axe
 ItemDisplay[NMAG ETH THROWING]: // Hides nmag eth throwing weapons) //
 ItemDisplay[NMAG (CL1 OR CL4 OR CL6)]: // %NAME% // Hides NMAG Barb helms - Nec shields - Sorc orbs
@@ -1121,25 +1230,23 @@ ItemDisplay[UNI ETH !ID]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %GOLD%%NAME%%CONTINUE%
 
 
 //GG UNIQUES
-ItemDisplay[UNI (rin) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Rings
-ItemDisplay[UNI (amu) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Amus
-ItemDisplay[UNI (uar) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Tyraels or Templars
-ItemDisplay[UNI (6ws) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Mang's Song
-ItemDisplay[UNI (ci3) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Griffon's Eye
-ItemDisplay[UNI (obf) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Death's Fathom
-ItemDisplay[UNI (ulc) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Arachnid Mesh
-ItemDisplay[UNI (urn) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Crown of Ages
-ItemDisplay[UNI (6lw) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Windforce
-ItemDisplay[UNI (7gw) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Death's Web
-ItemDisplay[UNI (7gd) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // The Grandfather
-ItemDisplay[UNI (7ws) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Astreon's Iron Ward
-ItemDisplay[UNI (7fb) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Odium
-ItemDisplay[UNI (uap) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Shako
-ItemDisplay[UNI (6bs) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Brimstone Rain
-ItemDisplay[UNI (uit) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Stormshield
-ItemDisplay[UNI (baf) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Raekor's Virtue
-ItemDisplay[UNI (drf) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Ursa's Nightmare
-ItemDisplay[UNI (umg) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Souldrainer
+ItemDisplay[UNI (rin) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Rings
+ItemDisplay[UNI (amu) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Amus
+ItemDisplay[UNI (uar) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*             %GOLD%%NAME%             %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Tyraels or Templars
+ItemDisplay[UNI (6ws) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*             %GOLD%%NAME%             %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Mang's Song
+ItemDisplay[UNI (ci3) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Griffon's Eye
+ItemDisplay[UNI (obf) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Death's Fathom
+ItemDisplay[UNI (ulc) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Arachnid Mesh
+ItemDisplay[UNI (urn) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Crown of Ages
+ItemDisplay[UNI (6lw) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Windforce
+ItemDisplay[UNI (7gw) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Death's Web
+ItemDisplay[UNI (7gd) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*             %GOLD%%NAME%             %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // The Grandfather
+ItemDisplay[UNI (7ws) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*             %GOLD%%NAME%             %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Astreon's Iron Ward
+ItemDisplay[UNI (7fb) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*             %GOLD%%NAME%             %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Odium
+ItemDisplay[UNI (uap) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Shako
+ItemDisplay[UNI (6bs) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Brimstone Rain
+ItemDisplay[UNI (uit) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Stormshield
+ItemDisplay[UNI (umg) !ID]: %BORDER-68%%GREEN%pick %PURPLE%*%RED%*%ORANGE%*%YELLOW%*               %GOLD%%NAME%               %YELLOW%*%ORANGE%*%RED%*%PURPLE%* %GREEN%up // Souldrainer
 
 
 //OK *** UNIQUES ***  Weapons
@@ -1224,8 +1331,6 @@ ItemDisplay[UNI (nef) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%
 //OK *** Boots ***
 ItemDisplay[UNI (umb) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Marrowalk's
 ItemDisplay[UNI (uvb) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Sandstorm Trek's
-ItemDisplay[UNI (xlb) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Infernostrides
-ItemDisplay[UNI (lbt) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Hotspur
 ItemDisplay[UNI (xhb) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Gore Riders
 ItemDisplay[UNI (uhb) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Shadow Dancers
 ItemDisplay[UNI (tbt) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Goblin Toes
@@ -1233,11 +1338,12 @@ ItemDisplay[UNI (xvb) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%
 
 
 //OK *** Helmets ***
+ItemDisplay[UNI (baf) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Raekor's Virtue
+ItemDisplay[UNI (drf) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Ursa's Nightmare
 ItemDisplay[UNI (xhl) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Darksight Helm
 ItemDisplay[UNI (drb) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Cerebus Bite
 ItemDisplay[UNI (bad) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Demonhorn's Edge
 ItemDisplay[UNI (xmb) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Silkweave
-ItemDisplay[UNI (hbt) !ID]: // %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Tearhaunch
 ItemDisplay[UNI (xh9) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Vampire Gaze
 ItemDisplay[UNI (usk) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Andariel's Visage
 ItemDisplay[UNI (ci2) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%%NAME%%GRAY%                *%TAN%*%YELLOW%*  // Kira's Guardian
@@ -1306,7 +1412,7 @@ ItemDisplay[UNI (tbl) !ID]: %DOT-68%%YELLOW%*%TAN%*%GRAY%*                %GOLD%
 
 
 //Rainbow Facet
-ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w     %NAME%%GOLD%     r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w
+ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%GOLD%w               %NAME%%GOLD%               r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w
 ItemDisplay[jew UNI ID]: %NAME%   
 
 
@@ -1317,8 +1423,8 @@ ItemDisplay[jew UNI ID]: %NAME%
 
 //Unique Two Handed Swords
 ItemDisplay[UNI (9cm) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Bing Sz Wang
-ItemDisplay[UNI (gsd) !ID]: %GOLD%                   %NAME%                        %GOLD% // The Patriarch
-ItemDisplay[UNI (9fb) !ID]: %GOLD%                   %NAME%                        %GOLD% // Todesfaelle Flamme
+ItemDisplay[UNI (gsd) !ID]: // %GOLD%                   %NAME%                        %GOLD% // The Patriarch
+ItemDisplay[UNI (9fb) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Todesfaelle Flamme
 ItemDisplay[UNI (9b9) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Cloudcrack
 ItemDisplay[UNI (2hs) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Shadowfang
 ItemDisplay[UNI (gis) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Kinemil's Awl
@@ -1331,7 +1437,7 @@ ItemDisplay[UNI (92h) !ID]: //  %GOLD%                   %NAME%                 
 //Unique One Handed Swords
 ItemDisplay[UNI (7sm) !ID]: %GOLD%                   %NAME%                        %GOLD% // Djinn Slayer
 ItemDisplay[UNI (9bs) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Headstriker
-ItemDisplay[UNI (9fc) !ID]: %GOLD%                   %NAME%                        %GOLD% // Blade of Ali Baba
+ItemDisplay[UNI (9fc) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Blade of Ali Baba
 ItemDisplay[UNI (9cr) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Ginther's Rift
 ItemDisplay[UNI (9wd) !ID]: // %GOLD%                   %NAME%                        %GOLD% // The Atlantean
 ItemDisplay[UNI (bsd) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Griswold's Edge
@@ -1386,7 +1492,7 @@ ItemDisplay[UNI (mac) !ID]: // %GOLD%                   %NAME%                  
 ItemDisplay[UNI (mst) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Bloodrise
 ItemDisplay[UNI (fla) !ID]: // %GOLD%                   %NAME%                        %GOLD% // The General's Tan Do Li Ga
 ItemDisplay[UNI (whm) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Ironstone
-ItemDisplay[UNI (9sp) !ID]: %GOLD%                   %NAME%                        %GOLD% // Fleshrender
+ItemDisplay[UNI (9sp) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Fleshrender
 ItemDisplay[UNI (7cl) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Nord's Tenderizer
 ItemDisplay[UNI (9cl) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Dark Clan Crusher
 ItemDisplay[UNI (9wh) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Earth Shaker
@@ -1396,8 +1502,8 @@ ItemDisplay[UNI (9ma) !ID]: // %GOLD%                   %NAME%                  
 ItemDisplay[UNI (9fl) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Baezil's Vortex
 
 //Unique Polearms
-ItemDisplay[UNI (7br) !ID]: %GOLD%                   %NAME%                        %GOLD% // Viperfork
 ItemDisplay[UNI (9s8) !ID]: %GOLD%                   %NAME%                        %GOLD% // Athena's Wrath
+ItemDisplay[UNI (7br) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Viperfork
 ItemDisplay[UNI (wsc) !ID]: // %GOLD%                   %NAME%                        %GOLD% // The Grim Reaper
 ItemDisplay[UNI (bar) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Dimoak's Hew
 ItemDisplay[UNI (9b7) !ID]: // %GOLD%                   %NAME%                        %GOLD% // The Meat Scraper
@@ -1412,7 +1518,7 @@ ItemDisplay[UNI (hal) !ID]: // %GOLD%                   %NAME%                  
 
 //Unique Spears
 ItemDisplay[UNI (am9) !ID]: %GOLD%                   %NAME%                        %GOLD% // Lycander´s Flank
-ItemDisplay[UNI (7sr) !ID]: %GOLD%                   %NAME%                        %GOLD% // Arioc's Needle
+ItemDisplay[UNI (7sr) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Arioc's Needle
 ItemDisplay[UNI (brn) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Bloodthief
 ItemDisplay[UNI (9tr) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Kelpie Snare
 ItemDisplay[UNI (spr) !ID]: // %GOLD%                   %NAME%                        %GOLD% // The Dragon Chang
@@ -1436,15 +1542,15 @@ ItemDisplay[UNI (8hb) !ID]: // %GOLD%                   %NAME%                  
 ItemDisplay[UNI (swb) !ID]: %GOLD%                   %NAME%                        %GOLD% // Hellclap
 ItemDisplay[UNI (cbw) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Rogue's Bow
 ItemDisplay[UNI (lbw) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Raven Claw
-ItemDisplay[UNI (8sb) !ID]: %GOLD%                   %NAME%                        %GOLD% // Skystrike
-ItemDisplay[UNI (lwb) !ID]: %GOLD%                   %NAME%                        %GOLD% // Blastbark
-ItemDisplay[UNI (hbw) !ID]: %GOLD%                   %NAME%                        %GOLD% // Witherstring - NOT WITCH WILD STRING
+ItemDisplay[UNI (8sb) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Skystrike
+ItemDisplay[UNI (lwb) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Blastbark
+ItemDisplay[UNI (hbw) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Witherstring
 
 //Unique Crossbows
 ItemDisplay[UNI (rxb) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Doomslinger
-ItemDisplay[UNI (8lx) !ID]: %GOLD%                   %NAME%                        %GOLD% // Langer Briser
+ItemDisplay[UNI (8lx) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Langer Briser
 ItemDisplay[UNI (hxb) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Hellcast
-ItemDisplay[UNI (lxb) !ID]: %GOLD%                   %NAME%                        %GOLD% // Leadcrow
+ItemDisplay[UNI (lxb) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Leadcrow
 ItemDisplay[UNI (mxb) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Ichorsting
 ItemDisplay[UNI (8hx) !ID]: %GOLD%                   %NAME%                        %GOLD% // Buriza-Do Kyanon
 ItemDisplay[UNI (8rx) !ID]: %GOLD%                   %NAME%                        %GOLD% // Demon Machine
@@ -1461,12 +1567,14 @@ ItemDisplay[UNI (9dg) !ID]: // %GOLD%                   %NAME%                  
 ItemDisplay[UNI (dgr) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Gull
 
 //Unique Throwing Weapons
+ItemDisplay[UNI (7b8) !ID]: %GOLD%                   %NAME%                        %GOLD% // Lacerator
 ItemDisplay[UNI (7bk) !ID]: %GOLD%                   %NAME%                        %GOLD% // Warshrike
+ItemDisplay[UNI (am5) !ID]: %GOLD%                   %NAME%                        %GOLD% // True Silver
 ItemDisplay[UNI (9tk) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Deathbit
 ItemDisplay[UNI (7ta) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Gimmershred
 ItemDisplay[UNI (9ta) !ID]: // %GOLD%                   %NAME%                        %GOLD% // The Scalper
-ItemDisplay[UNI (am5) !ID]: %GOLD%                   %NAME%                        %GOLD% // True Silver
 ItemDisplay[UNI (7s7) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Demon's Arch
+
 
 //Unique Staves
 ItemDisplay[UNI (cst) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Spire of Lazarus
@@ -1494,7 +1602,7 @@ ItemDisplay[UNI (scp) !ID]: // %GOLD%                   %NAME%                  
 ItemDisplay[UNI (gsc) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Rusthandle
 ItemDisplay[UNI (wsp) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Stormeye
 ItemDisplay[UNI (9sc) !ID]: %GOLD%                   %NAME%                        %GOLD% // Zakarum's Hand
-ItemDisplay[UNI (9qs) !ID]: %GOLD%                   %NAME%                        %GOLD% // The Fetid Sprinkler
+ItemDisplay[UNI (9qs) !ID]: // %GOLD%                   %NAME%                        %GOLD% // The Fetid Sprinkler
 ItemDisplay[UNI (9ws) !ID]: %GOLD%                   %NAME%                        %GOLD% // Hand of Blessed Light
 
 //Unique Helms
@@ -1513,7 +1621,8 @@ ItemDisplay[UNI (cap) !ID]: %GOLD%                   %NAME%                     
 ItemDisplay[UNI (xap) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Peasant Crown
 
 //Unique Chests
-ItemDisplay[UNI (gth) !ID]: %GOLD%                   %NAME%                        %GOLD% // Rattlecage
+ItemDisplay[UNI (fld) !ID]: %GOLD%                   %NAME%                        %GOLD% // Rockfleece
+ItemDisplay[UNI (gth) !ID]: //%GOLD%                   %NAME%                        %GOLD% // Rattlecage
 ItemDisplay[UNI (xla) !ID]: //%GOLD%                   %NAME%                        %GOLD% // Skin of the Flayed One
 ItemDisplay[UNI (xng) !ID]: %GOLD%                   %NAME%                        %GOLD% // Spirit Forge
 ItemDisplay[UNI (lea) !ID]: %GOLD%                   %NAME%                        %GOLD% // Blinkbat's Form
@@ -1524,14 +1633,15 @@ ItemDisplay[UNI (ful) !ID]: // %GOLD%                   %NAME%                  
 ItemDisplay[UNI (hla) !ID]: // %GOLD%                   %NAME%                        %GOLD% // The Centurion
 ItemDisplay[UNI (scl) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Hawkmail
 ItemDisplay[UNI (plt) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Boneflesh
-ItemDisplay[UNI (stu) !ID]: %GOLD%                   %NAME%                        %GOLD% // Twitchthroe
-ItemDisplay[UNI (brs) !ID]: %GOLD%                   %NAME%                        %GOLD% // Venomward
-ItemDisplay[UNI (spl) !ID]: %GOLD%                   %NAME%                        %GOLD% // Iceblink
+ItemDisplay[UNI (stu) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Twitchthroe
+ItemDisplay[UNI (brs) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Venomward
+ItemDisplay[UNI (spl) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Iceblink
 ItemDisplay[UNI (ltp) !ID]: %GOLD%                   %NAME%                        %GOLD% // Heavenly Garb
 ItemDisplay[UNI (aar) !ID]: %GOLD%                   %NAME%                        %GOLD% // Silks of the Victor
 ItemDisplay[UNI (xui) !ID]: %GOLD%                   %NAME%                        %GOLD% // Spirit Shroud
 
 //Unique Shields
+ItemDisplay[UNI (upk) !ID]: %GOLD%                   %NAME%                        %GOLD% // Spike Thorn
 ItemDisplay[UNI (pa3) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Sankekur's Fall
 ItemDisplay[UNI (xuc) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Visceretuant Defender
 ItemDisplay[UNI (kit) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Steelclash
@@ -1545,7 +1655,7 @@ ItemDisplay[UNI (spk) !ID]: // %GOLD%                   %NAME%                  
 ItemDisplay[UNI (buc) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Pelta Lunata
 ItemDisplay[UNI (sml) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Umbral Disk 
 ItemDisplay[UNI (xrg) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Stormchaser
-ItemDisplay[UNI (upk) !ID]: %GOLD%                   %NAME%                        %GOLD% // Spike Thorn
+ItemDisplay[UNI (xpk) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Lance Guard
 ItemDisplay[UNI (xit) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Tiamat's Rebuke
 
 //Unique Gloves
@@ -1553,26 +1663,32 @@ ItemDisplay[UNI (vgl) !ID]: %GOLD%                   %NAME%                     
 ItemDisplay[UNI (lgl) !ID]: %GOLD%                   %NAME%                        %GOLD% // Hand of Broc
 
 //Unique Boots
-ItemDisplay[UNI (vbt) !ID]:  // %GOLD%                   %NAME%                        %GOLD% // Gorefoot
+ItemDisplay[UNI (mbt) !ID]:  %GOLD%                   %NAME%                        %GOLD% // Treads of Cthon
+ItemDisplay[UNI (vbt) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Gorefoot
+ItemDisplay[UNI (hbt) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Tearhaunch
+ItemDisplay[UNI (xlb) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Infernostrides
+ItemDisplay[UNI (lbt) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Hotspur
+
+
 
 //Unique Belts
-ItemDisplay[UNI (zmb) !ID]: %GOLD%                   %NAME%                        %GOLD% // Gloom's Trap
-ItemDisplay[UNI (mbl) !ID]: %GOLD%                   %NAME%                        %GOLD% // Nightsmoke
 ItemDisplay[UNI (vbl) !ID]: %GOLD%                   %NAME%                        %GOLD% // Snakecord
-ItemDisplay[UNI (hbl) !ID]: %GOLD%                   %NAME%                        %GOLD% // Bladebuckle
+ItemDisplay[UNI (zmb) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Gloom's Trap
+ItemDisplay[UNI (mbl) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Nightsmoke
+ItemDisplay[UNI (hbl) !ID]: // %GOLD%                   %NAME%                        %GOLD% // Bladebuckle
 
 //Sets
-ItemDisplay[SET (amu) !ID]: %BORDER-84%%GREEN%                    %NAME%                        %GREEN% // Set Amus
-ItemDisplay[SET (rin) !ID]: %BORDER-84%%GREEN%                    %NAME%                        %GREEN% // Set Rings
+ItemDisplay[SET (amu) !ID]: // %BORDER-84%%GREEN%                    %NAME%                        %GREEN% // Set Amus
+ItemDisplay[SET (rin) !ID]: // %BORDER-84%%GREEN%                    %NAME%                        %GREEN% // Set Rings
 
 //Arctic Gear
 ItemDisplay[SET (qui) !ID]: %GREEN%                    %NAME%                        %GREEN% // Arctic Furs
-ItemDisplay[SET (tgl) !ID]: %GREEN%                    %NAME%                        %GREEN% // Arctic Mitts
+ItemDisplay[SET (tgl) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Arctic Mitts
 ItemDisplay[SET (vbl) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Arctic Binding
 ItemDisplay[SET (swb) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Arctic Horn
 
 //Hsaru's Defense
-ItemDisplay[SET (mbt) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Hsaru's Iron Heel
+ItemDisplay[SET (mbt) !ID]: %GREEN%                    %NAME%                        %GREEN% // Hsaru's Iron Heel
 ItemDisplay[SET (mbl) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Hsaru's Iron Stay
 ItemDisplay[SET (buc) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Hsaru's Iron Fist
 
@@ -1623,7 +1739,7 @@ ItemDisplay[SET (bst) !ID]: // %GREEN%                    %NAME%                
 
 //Angelic Raiments
 ItemDisplay[SET (sbr) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Angelic Sickle
-ItemDisplay[SET (rng) !ID]: %GREEN%                    %NAME%                        %GREEN% // Angelic Mantle
+ItemDisplay[SET (rng) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Angelic Mantle
 
 Vidala's Rig
 ItemDisplay[SET (tbt) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Vidala's Fetlock
@@ -1672,7 +1788,7 @@ ItemDisplay[SET (9vo) !ID]: // %GREEN%                    %NAME%                
 //Orphan's Call
 ItemDisplay[SET (xhm) !ID]: %BORDER-68%%GREEN%                    %NAME%                    %GREEN% // Guillame's Face
 ItemDisplay[SET (ztb) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Wilhelms Pride
-ItemDisplay[SET (xvg) !ID]: %NAME% // Magnus Skin
+ItemDisplay[SET (xvg) !ID]: %BORDER-68%%GREEN%                    %NAME%                    %GREEN% // Magnus Skin
 ItemDisplay[SET (xml) !ID]: // %GREEN%                    %NAME%                        %GREEN% // Whitstan's Guard
 
 //The Disciple
@@ -1703,9 +1819,9 @@ ItemDisplay[SET (7gd) !ID]:  %BORDER-68%%GREEN%                    %NAME%       
 
 //Aldur's Watchtower
 ItemDisplay[SET (dr8) !ID]:  %BORDER-68%%GREEN%                    %NAME%                    %GREEN% // Aldur's Stony Gaze
-ItemDisplay[SET (uul) !ID]:  %BORDER-68%%GREEN%                    %NAME%                    %GREEN% // Aldur's Deception
-ItemDisplay[SET (xtb) !ID]:  %BORDER-68%%GREEN%                    %NAME%                    %GREEN% // Aldur's Advance
-ItemDisplay[SET (9mt) !ID]:  %BORDER-68%%GREEN%                    %NAME%                    %GREEN% // Aldur's Rhythm
+ItemDisplay[SET (uul) !ID]: // %BORDER-68%%GREEN%                    %NAME%                    %GREEN% // Aldur's Deception
+ItemDisplay[SET (xtb) !ID]: // %BORDER-68%%GREEN%                    %NAME%                    %GREEN% // Aldur's Advance
+ItemDisplay[SET (9mt) !ID]: // %BORDER-68%%GREEN%                    %NAME%                    %GREEN% // Aldur's Rhythm
 
 Griswold's Legacy
 ItemDisplay[SET (urn) !ID]:  %BORDER-68%%GREEN%                    %NAME%                    %GREEN% // Griswold's Valor
@@ -1756,18 +1872,18 @@ ItemDisplay[SET (ne9) !ID]:  %BORDER-68%%GREEN%                    %NAME%       
 //ItemDisplay[GOLD<400 (CLVL>39 OR FILTLVL>3)]:
 //ItemDisplay[GOLD<5000 CLVL>79]:
 //ItemDisplay[GOLD<5000 CLVL>79 FILTLVL>1]:
-ItemDisplay[GOLD<3000 CLVL>79 FILTLVL>3]:
+ItemDisplay[GOLD<3000 CLVL>1 FILTLVL>3]:
 //ItemDisplay[GOLD<5000 CLVL>79 FILTLVL>4]:
 //ItemDisplay[GOLD<1800]:
 
 //Health & Mana Potions
 ItemDisplay[(rvl) FILTLVL=5]:     %PURPLE%                          @@          %WHITE%                       %PURPLE%           // Show Full Rejuv Potion on Filter Level 4
 ItemDisplay[(rvs OR rvl)  FILTLVL=6]: // Hide Full & Small Rejuvs Rejuv Potion on Filter Level 4
-ItemDisplay[rvl]: %PURPLE%@%WHITE% Rejuv  %PURPLE%          // Full Rejuv
+ItemDisplay[rvl]:      %PURPLE%                          @@          %WHITE%                       %PURPLE%           // Full Rejuv
 //ItemDisplay[(rvs) FILTLVL=4]: //    %PURPLE%            @          %WHITE%  %PURPLE%           // Show Full Rejuv Potion on Filter Level 5
 ItemDisplay[rvs]: // %PURPLE%                          @%WHITE%                                %PURPLE%              //Small Rejuv
-ItemDisplay[hp5]: //%RED%@%WHITE%        %RED%
-ItemDisplay[mp5]: //%BLUE%@%GRAY%        %BLUE%
+ItemDisplay[hp5]: // %RED%@%WHITE%        %RED%
+ItemDisplay[mp5]: // %BLUE%@%GRAY%        %BLUE%
 ItemDisplay[hp1]: %RED%!%WHITE%minor hp{%NAME%}%CONTINUE%
 ItemDisplay[hp2]: %RED%!%WHITE%light hp{%NAME%}%CONTINUE%
 ItemDisplay[hp3]: %RED%!%WHITE%healing{%NAME%}%CONTINUE%
@@ -2352,6 +2468,7 @@ ItemDisplay[(SUP OR INF) !RW amf]: Matriarchal Javelin%CONTINUE%
 
 //Let's keep orginal coloring for items
 ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%
+ItemDisplay[UNI ETH ID]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %GOLD%%NAME%%GOLD%
 ItemDisplay[SET]: %GREEN%%NAME%%CONTINUE%
 ItemDisplay[RARE]: %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[RARE ETH]: %GRAY%[%WHITE%Eth%WHITE%%GRAY%] %YELLOW%%NAME%%YELLOW%
@@ -4427,7 +4544,7 @@ ItemDisplay[(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>2 OR SK238>2 OR SK24
 
 
 //Show me quantitiy of all stackables
-ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR (MAPTIER>0 !NMAG)) QTY>0]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
+ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR aqv OR cqv OR (MAPTIER>0 !NMAG)) QTY>0]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
 
 //Jewel notes
 ItemDisplay[jew STAT477=21 ]: %NAME%{%TAN%Note%WHITE%: White %BLUE%Jewel}
@@ -4436,7 +4553,7 @@ ItemDisplay[jew ID]: // %NAME%{%TAN%Note%WHITE%: Cube with %GRAY%key %WHITE%to D
 ItemDisplay[jewf ID]: // %BLUE%%NAME%{%GRAY%(Stackable Jewel)%NL%%TAN%Note%WHITE%: Use Those in Cube Recipes}
 
 //Standard of Heroes
-ItemDisplay[std]: %PX-9D%%NAME%{%WHITE%+10% Experience%NL%+20% Magic&Gold Find%NL%+20% Monster Density%NL%%TAN%Note: %WHITE%Cube it with Map to gain:}
+ItemDisplay[std]: %PX-9D%%NAME%// {%WHITE%+10% Experience%NL%+20% Magic&Gold Find%NL%+20% Monster Density%NL%%TAN%Note: %WHITE%Cube it with Map to gain:}
 
 //Show me every identified item
 ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv)) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%{%NAME%}
